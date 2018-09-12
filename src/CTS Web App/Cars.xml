@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<CarDetails>
+  <Car>
+    <ID>101</ID>
+    <Name>Fiat</Name>
+    <Type>Saloon</Type>
+    <Year>2015</Year>
+  </Car>
+  <Car>
+    <ID>102</ID>
+    <Name>Ford</Name>
+    <Type>Hatchback</Type>
+    <Year>2016</Year>
+  </Car>
+  <Car>
+    <ID>1</ID>
+    <Name>Nissan</Name>
+    <Type>SUV</Type>
+    <Year>2008</Year>
+  </Car>
+  <Car>
+    <ID>
+    </ID>
+    <Name>
+    </Name>
+    <Type>
+    </Type>
+    <Year>
+    </Year>
+  </Car>
+  <Car>
+    <ID>2</ID>
+    <Name>2</Name>
+    <Type>2</Type>
+    <Year>2</Year>
+  </Car>
+</CarDetails>
