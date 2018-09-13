@@ -4,20 +4,23 @@
 
 A business has a basic website allowing customers see a list of cars available on the Computershare car list.
 
-As the business has grown through the years, there needs to be a scalable solution, so that the one web server is not responsible for everything and become monolithic. The business needs to move this application to Azure and also to a CI and CD process to improve delivery cadence.
+As the business has grown through the years, there needs to be a scalable solution and so is planning to move hosting to Azure including a CI and CD pipeline to improve delivery cadence.
 
 The new functional requirements of the system are:
 
-- Extending the UI include a car VIN column
-- Change the Car type to a fixed dropdown list 
-- Add authentication to the application storing username and password credentials in the local web.config
+- Extending the UI include a car VIN (Vechicle Identification Number) column
+- Add integer validation to ID column 
+- Change "Type" field to a fixed dropdown list 
+- Add username and password authentication to the application storing the username and password credentials in the local web.config
 
 ## Tasks for participants
 
-- Deploy the existing project to Azure including a CI and CD pipeline
-- Initial task will be to add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
+- Deploy the existing project to Azure 
+- Include a CI and CD pipeline
+- Add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
+- Add integer validation to ID column 
+- Convert the type field to a dropdown list on edit
 - Add authentication to the application storing username and password credentials in the local web.config
-- On completing the above task, they convert the type field to a dropdown list on edit.
 
 ## Solution Components
 
