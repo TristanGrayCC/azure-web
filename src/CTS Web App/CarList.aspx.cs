@@ -59,27 +59,27 @@ namespace CTS_Web_App
         }
         void Insert_XML()
         {
-            TextBox Car_Id = CarsGridview.FooterRow.FindControl("TxtCarID") as TextBox;
-            TextBox Car_Name = CarsGridview.FooterRow.FindControl("TxtCarName") as TextBox;
-            TextBox Car_Type = CarsGridview.FooterRow.FindControl("TxtCarType") as TextBox;
-            TextBox Car_Year = CarsGridview.FooterRow.FindControl("TxtCarYear") as TextBox;
-            XmlDocument MyXmlDocument = new XmlDocument();
-            MyXmlDocument.Load(Server.MapPath("~/Cars.xml"));
-            XmlElement ParentElement = MyXmlDocument.CreateElement("Car");
-            XmlElement ID = MyXmlDocument.CreateElement("ID");
-            ID.InnerText = Car_Id.Text;
-            XmlElement Name = MyXmlDocument.CreateElement("Name");
-            Name.InnerText = Car_Name.Text;
-            XmlElement Type = MyXmlDocument.CreateElement("Type");
-            Type.InnerText = Car_Type.Text;
-            XmlElement Year = MyXmlDocument.CreateElement("Year");
-            Year.InnerText = Car_Year.Text;
+            TextBox car_Id = CarsGridview.FooterRow.FindControl("TxtCarID") as TextBox;
+            TextBox car_Name = CarsGridview.FooterRow.FindControl("TxtCarName") as TextBox;
+            TextBox car_Type = CarsGridview.FooterRow.FindControl("TxtCarType") as TextBox;
+            TextBox car_Year = CarsGridview.FooterRow.FindControl("TxtCarYear") as TextBox;
+            XmlDocument carsDocument = new XmlDocument();
+            carsDocument.Load(Server.MapPath("~/Cars.xml"));
+            XmlElement ParentElement = carsDocument.CreateElement("Car");
+            XmlElement ID = carsDocument.CreateElement("ID");
+            ID.InnerText = car_Id.Text;
+            XmlElement Name = carsDocument.CreateElement("Name");
+            Name.InnerText = car_Name.Text;
+            XmlElement Type = carsDocument.CreateElement("Type");
+            Type.InnerText = car_Type.Text;
+            XmlElement Year = carsDocument.CreateElement("Year");
+            Year.InnerText = car_Year.Text;
             ParentElement.AppendChild(ID);
             ParentElement.AppendChild(Name);
             ParentElement.AppendChild(Type);
             ParentElement.AppendChild(Year);
-            MyXmlDocument.DocumentElement.AppendChild(ParentElement);
-            MyXmlDocument.Save(Server.MapPath("~/Cars.xml"));
+            carsDocument.DocumentElement.AppendChild(ParentElement);
+            carsDocument.Save(Server.MapPath("~/Cars.xml"));
             BindGrid();
         }
     }
