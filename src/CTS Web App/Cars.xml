@@ -18,20 +18,4 @@
     <Type>SUV</Type>
     <Year>2008</Year>
   </Car>
-  <Car>
-    <ID>
-    </ID>
-    <Name>
-    </Name>
-    <Type>
-    </Type>
-    <Year>
-    </Year>
-  </Car>
-  <Car>
-    <ID>2</ID>
-    <Name>2</Name>
-    <Type>2</Type>
-    <Year>2</Year>
-  </Car>
 </CarDetails>
