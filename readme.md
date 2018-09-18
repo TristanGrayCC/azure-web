@@ -35,7 +35,7 @@ In the Solution Explorer, right click on CTS Web App and Debug
 
 You must sign into Visual Studio before proceeding to the steps below.
 
-1 In the Solution Explorer, right click on CTS Web App and Publish
-2 Select Create New, then click Create Profile
-3 Fill the required fields, then Create
-4 Log in to https://portal.azure.com/ and click on App Services in the left panel to see your deployment
+1. In the Solution Explorer, right click on CTS Web App and Publish
+2. Select Create New, then click Create Profile
+3. Fill the required fields, then Create
+4. Log in to https://portal.azure.com/ and click on App Services in the left panel to see your deployment
