@@ -16,10 +16,9 @@ The new functional requirements of the system are:
 ## Tasks for participants
 
 - Deploy the existing project to Azure 
-- Include a CI and CD pipeline
 - Add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
+- Include a CI and CD pipeline
 - Add integer validation to ID column 
-- Convert the type field to a dropdown list on edit
 - Add authentication to the application storing username and password credentials in the local web.config
 
 ## Solution Components
