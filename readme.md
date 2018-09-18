@@ -29,7 +29,7 @@ Web interface which will be used to update the car list
 
 #### Running CTS Web App
 
-1 In the Solution Explorer, right click on CTS Web App and Debug
+In the Solution Explorer, right click on CTS Web App and Debug
 
 #### Publishing CTS Web App to Azure
 
