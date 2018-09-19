@@ -16,10 +16,9 @@ The new functional requirements of the system are:
 ## Tasks for participants
 
 - Deploy the existing project to Azure 
-- Include a CI and CD pipeline
 - Add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
+- Include a CI and CD pipeline
 - Add integer validation to ID column 
-- Convert the type field to a dropdown list on edit
 - Add authentication to the application storing username and password credentials in the local web.config
 
 ## Solution Components
@@ -30,13 +29,13 @@ Web interface which will be used to update the car list
 
 #### Running CTS Web App
 
-1 In the Solution Explorer, right click on CTS Web App and Debug
+In the Solution Explorer, right click on CTS Web App and Debug
 
 #### Publishing CTS Web App to Azure
 
 You must sign into Visual Studio before proceeding to the steps below.
 
-1 In the Solution Explorer, right click on CTS Web App and Publish
-2 Select Create New, then click Create Profile
-3 Fill the required fields, then Create
-4 Log in to https://portal.azure.com/ and click on App Services in the left panel to see your deployment
+1. In the Solution Explorer, right click on CTS Web App and Publish
+2. Select Create New, then click Create Profile
+3. Fill the required fields, then Create
+4. Log in to https://portal.azure.com/ and click on App Services in the left panel to see your deployment
