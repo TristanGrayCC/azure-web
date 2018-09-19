@@ -5,7 +5,7 @@
     <div class="jumbotron" style="background-color:rgb(147, 24, 108);">
         <h1>Welcome to the Computershare Car Showroom </h1>
         <p class="lead">Edit the Computershare car list at the following link.</p>
-        <p><a href="carlist.aspx" class="btn btn-primary btn-lg">See car list &raquo;</a></p>
+        <p><a href="/Car" class="btn btn-primary btn-lg">See car list &raquo;</a></p>
     </div>
 
     
