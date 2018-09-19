@@ -9,7 +9,7 @@ As the business has grown through the years, there needs to be a scalable soluti
 The new functional requirements of the system are:
 
 - Extending the UI include a car VIN (Vechicle Identification Number) column
-- Add integer validation to ID column 
+- Add validation to Year column 
 - Change "Type" field to a fixed dropdown list 
 - Add username and password authentication to the application storing the username and password credentials in the local web.config
 
@@ -18,7 +18,7 @@ The new functional requirements of the system are:
 - Deploy the existing project to Azure 
 - Add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
 - Include a CI and CD pipeline
-- Add integer validation to ID column 
+- Add validation to Year column 
 - Add authentication to the application storing username and password credentials in the local web.config
 
 ## Solution Components
