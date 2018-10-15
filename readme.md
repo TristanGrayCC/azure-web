@@ -25,7 +25,7 @@ The new functional requirements of the system are:
 
 ### Web App
 
-Web interface which will be used to update the car list
+Web interface which will be used to update the car list written as an MVC and WebForms application. 
 
 #### Running CTS Web App
 
