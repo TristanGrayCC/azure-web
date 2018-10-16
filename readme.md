@@ -2,40 +2,32 @@
 
 ## Story
 
-A business has a basic website allowing customers see a list of cars available on the Computershare car list.
+CarMart UK has a basic website allowing customers to view a list of cars they have available for sale.
 
-As the business has grown through the years, there needs to be a scalable solution and so is planning to move hosting to Azure including a CI and CD pipeline to improve delivery cadence.
+As the business has grown, the company has seen an increase in the cost of purchasing and managing their server environment to keep up with spikes in traffic. They also struggle to deploy application changes reliably across their fleet of servers.
 
-The new functional requirements of the system are:
+They need a scalable solution, with a CI/CD pipeline to improve delivery cadence.
 
-- Extending the UI include a car VIN (Vechicle Identification Number) column
-- Add validation to Year column 
-- Change "Type" field to a fixed dropdown list 
-- Add username and password authentication to the application storing the username and password credentials in the local web.config
+## Technology
 
-## Tasks for participants
+The company wishes to continue using their ASP.NET web application as is, but do not want to manage their own servers or IIS instances. They have chosen Azure Web Apps to host the application as it should port easily, while offering reduced maintenance and cost-effective scalability.
 
-- Deploy the existing project to Azure 
-- Add a new column called "VIN  Number" and validation on save that it is an 8 digit numeric value
-- Include a CI and CD pipeline
-- Add validation to Year column 
-- Add authentication to the application storing username and password credentials in the local web.config
+## Getting Started
 
-## Solution Components
+1. Clone or download this repository
+1. Open `src/CTS Web App.sln` in Visual Studio 2017
+1. Restore NuGet packages
+1. Build the solution and press `F5` to debug and validate it works
 
-### Web App
+## Goal
 
-Web interface which will be used to update the car list written as an MVC and WebForms application. 
+Build a CI/CD pipeline that will build, test and deploy the application in a safe and repeatable way. The pipleline should:
 
-#### Running CTS Web App
+- Be triggered by source control
+- Execute all included unit tests
+- Publish to a staging environent
+- Once the app has been verified in staging, swap the staging and production environments
 
-In the Solution Explorer, right click on CTS Web App and Debug
+## Change Scenario
 
-#### Publishing CTS Web App to Azure
-
-You must sign into Visual Studio before proceeding to the steps below.
-
-1. In the Solution Explorer, right click on CTS Web App and Publish
-2. Select Create New, then click Create Profile
-3. Fill the required fields, then Create
-4. Log in to https://portal.azure.com/ and click on App Services in the left panel to see your deployment
+To test the pipeline, a simple change should be committed to the application's repository. You could, for example, add a new column called "VIN  Number" with validation to confirm it is an 8 digit numeric value.
