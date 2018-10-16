@@ -25,7 +25,7 @@ Build a CI/CD pipeline that will build, test and deploy the application in a saf
 
 - Be triggered by source control
 - Execute all included unit tests
-- Publish to a staging environent
+- Publish to a staging environment
 - Once the app has been verified in staging, swap the staging and production environments
 
 ## Change Scenario
