@@ -14,14 +14,14 @@ The company wishes to continue using their ASP.NET web application as is, but do
 
 ## Getting Started
 
-1. Clone or download this repository
-1. Open `src/CTS Web App.sln` in Visual Studio 2017
+1. Fork and clone this repository
+1. Open `src\CTS Web App.sln` in Visual Studio 2017
 1. Restore NuGet packages
 1. Build the solution and press `F5` to debug and validate it works
 
 ## Goal
 
-Build a CI/CD pipeline that will build, test and deploy the application in a safe and repeatable way. The pipleline should:
+Build a CI/CD pipeline that will build, test and deploy the application in a safe and repeatable way. The pipeline should:
 
 - Be triggered by source control
 - Execute all included unit tests
@@ -30,4 +30,4 @@ Build a CI/CD pipeline that will build, test and deploy the application in a saf
 
 ## Change Scenario
 
-To test the pipeline, a simple change should be committed to the application's repository. You could, for example, add a new column called "VIN  Number" with validation to confirm it is an 8 digit numeric value.
+To test the pipeline, a simple change should be committed to the application's repository. You could, for example, add a new column called `VIN  Number`, with validation to confirm it is an 8 digit numeric value.
